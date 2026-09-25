@@ -92,6 +92,7 @@ ul.plain li{font-weight:400}
 /* ===== LANDING ===== */
 .landing{min-height:100vh;display:grid;grid-template-columns:1.15fr 1fr}
 .land-intro{background:var(--ink);color:#fff;padding:72px 64px;display:flex;flex-direction:column;justify-content:center}
+.land-logo{display:block;height:44px;width:auto;margin-bottom:48px;align-self:flex-start}
 .land-intro h1{font-size:clamp(36px,4.4vw,60px);font-weight:800;max-width:11ch;letter-spacing:-.01em}
 .land-intro>p{max-width:44ch;margin-top:22px;color:#EADFDC;font-size:17px}
 .land-steps{list-style:none;margin-top:48px;display:grid;gap:18px;max-width:44ch;counter-reset:s}
@@ -697,13 +698,9 @@ function renderLanding(msg=''){
   show('landing');
   $('#v-landing').innerHTML = `<div class="landing">
     <section class="land-intro">
+      <img class="land-logo" src="https://i.imgur.com/fQCcuMs.png" alt="Cegoc" onerror="this.remove()">
       <h1>Ficha de Diagnóstico do Líder</h1>
       <p>Um só lugar para conhecer cada pessoa da equipa: o que a motiva, como liderá-la em cada tarefa, o seu potencial e o plano de desenvolvimento.</p>
-      <ol class="land-steps">
-        <li>Convide cada pessoa da equipa com um link próprio.</li>
-        <li>A pessoa responde ao Mapeamento Motivacional e vê o seu resultado.</li>
-        <li>A ficha abre já com os motivadores. Completa o resto com a sua leitura.</li>
-      </ol>
     </section>
     <section class="land-box">
       <h2>Criar o meu espaço de líder</h2>
